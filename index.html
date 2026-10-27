@@ -136,7 +136,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .empty{color:var(--muted);font-size:.9rem;padding:8px}
 
 /* Carte */
-.mapwrap{position:relative;min-width:0;min-height:0;background:var(--sea);overflow:hidden}
+.mapwrap{position:relative;min-width:0;min-height:0;background:var(--sea);overflow:hidden;display:flex;flex-direction:column}
+.mapcanvas{position:relative;flex:1;min-height:0;overflow:hidden}
 #map{width:100%;height:100%;display:block;touch-action:none;cursor:grab}
 #map:active{cursor:grabbing}
 .region{fill:var(--land);stroke:var(--land-stroke);stroke-width:.8;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .15s}
@@ -155,7 +156,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .sea-label{font:italic 600 13px var(--f-display);fill:var(--muted);letter-spacing:.25em;opacity:.6}
 .ctrl{position:absolute;top:12px;right:12px;display:flex;flex-direction:column;gap:6px;z-index:6}
 .ctrl button{width:38px;height:38px;border-radius:9px;border:1px solid var(--line);background:var(--panel);box-shadow:var(--shadow);cursor:pointer;font-size:1.1rem;display:grid;place-items:center}
-.legend{position:absolute;left:12px;bottom:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.78rem;display:flex;flex-direction:column;gap:6px;box-shadow:var(--shadow);max-width:calc(100% - 24px);color:var(--muted)}
+.legend{flex:none;background:var(--panel);border-top:1px solid var(--line);padding:8px 14px;font-size:.78rem;display:flex;flex-direction:column;gap:6px;color:var(--muted);position:relative;z-index:9}
 .legend .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .legend .row span{display:inline-flex;gap:6px;align-items:center}
 .sym{width:13px;height:13px;border-radius:50%;background:var(--muted);border:2px solid var(--panel);box-shadow:0 0 0 1px var(--muted)}
@@ -458,6 +459,7 @@ html{scroll-behavior:smooth}
     </aside>
 
     <div class="mapwrap">
+     <div class="mapcanvas">
       <div class="seg mode" role="group" aria-label="Mode d'affichage de la carte" id="mode">
         <button type="button" data-v="pts" aria-pressed="true">Projets</button>
         <button type="button" data-v="reg" aria-pressed="false">Investissement par région</button>
@@ -472,13 +474,14 @@ html{scroll-behavior:smooth}
       </div>
       <div class="basemenu" id="baseMenu" hidden role="radiogroup" aria-label="Fond de plan"></div>
       <div class="attrib" id="attrib"></div>
+      <div class="tip" id="tip" hidden></div>
+      <article class="fiche" id="fiche" hidden aria-live="polite"></article>
+     </div>
       <div class="legend" aria-label="Légende">
         <div class="row choro-leg" id="choroLeg" hidden><span>0</span><i></i><span id="choroMax">–</span><span>FCFA publiés</span></div>
         <div class="row" id="ptsLeg"><span><i class="sym"></i>Livré</span><span><i class="sym wip"></i>En chantier</span><span><i class="sym plan"></i>Programmé</span><span>Taille selon le montant</span></div>
         <div class="row sects" id="leg"></div>
       </div>
-      <div class="tip" id="tip" hidden></div>
-      <article class="fiche" id="fiche" hidden aria-live="polite"></article>
     </div>
   </div>
 </section>
