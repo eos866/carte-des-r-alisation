@@ -1,0 +1,1686 @@
+{
+ "meta": {
+  "titre": "Carte des réalisations – Sénégal",
+  "date_donnees": "2026-10-27",
+  "auteur": "CEGIT",
+  "note": "src='real' : projet réel sourcé ; src='fake' : exemple fictif. m=null : montant non communiqué."
+ },
+ "secteurs": {
+  "sante": "Santé",
+  "educ": "Éducation",
+  "route": "Routes et ponts",
+  "eau": "Eau et assainissement",
+  "energie": "Énergie",
+  "agri": "Agriculture et industrie",
+  "mob": "Transports",
+  "marche": "Équipements marchands",
+  "sport": "Sport et jeunesse",
+  "culture": "Culture",
+  "env": "Cadre de vie"
+ },
+ "regions": {
+  "Dakar": "Dakar",
+  "Diourbel": "Diourbel",
+  "Fatick": "Fatick",
+  "Kaffrine": "Kaffrine",
+  "Kaolack": "Kaolack",
+  "Kolda": "Kolda",
+  "Louga": "Louga",
+  "Matam": "Matam",
+  "Saint Louis": "Saint-Louis",
+  "Sedhiou": "Sédhiou",
+  "Tambacounda": "Tambacounda",
+  "Thies": "Thiès",
+  "Ziguinchor": "Ziguinchor",
+  "Kedougou": "Kédougou"
+ },
+ "axes_senegal_2050": {
+  "A2": "Capital humain de qualité et équité sociale",
+  "A3": "Aménagement du territoire et développement durable",
+  "A4": "Économie compétitive et résiliente"
+ },
+ "sources": {
+  "cm2907": {
+   "n": "Communiqué du Conseil des ministres du 29 juillet 2026",
+   "u": "https://primature.sn/publications/conseil-des-ministres/conseil-des-ministres-du-29-juillet-2026"
+  },
+  "ussein": {
+   "n": "Le Soleil, réception des infrastructures de l'USSEIN (28 juillet 2026)",
+   "u": "https://lesoleil.sn/actualites/education/fatick-et-kaffrine-les-infrastructures-pedagogiques-de-lussein-officiellement-receptionnees/"
+  },
+  "zig": {
+   "n": "Dakaractu, remise en service de l'aéroport de Ziguinchor (avril 2026)",
+   "u": "https://www.dakaractu.com/L-aeroport-de-Ziguinchor-officiellement-remis-en-service_a271496.html"
+  },
+  "iba": {
+   "n": "AllAfrica / APS, réception du stade Iba Mar Diop (20 mai 2026)",
+   "u": "https://fr.allafrica.com/stories/202605200521.html"
+  },
+  "agro": {
+   "n": "Ndarinfo, Agropole Sud (23 décembre 2025)",
+   "u": "https://www.ndarinfo.com/Agropole-Sud-Diomaye-annonce-109-milliards-FCFA-pour-transformer-la-Casamance_a42227.html"
+  },
+  "eau25": {
+   "n": "AllAfrica / Le Soleil, bilan 2025 des investissements dans l'eau",
+   "u": "https://fr.allafrica.com/stories/202512300361.html"
+  },
+  "lfi": {
+   "n": "Le Soleil, 44 projets inscrits dans la LFI 2026",
+   "u": "https://lesoleil.sn/actualites/economie/plan-de-redressement-economique-633-milliards-f-cfa-mobilises-pour-44-projets-denvergure/"
+  },
+  "plf": {
+   "n": "Le Soleil, grands chantiers du PLF 2026",
+   "u": "https://lesoleil.sn/actualites/economie/2026-le-senegal-entre-dans-lere-des-grands-chantiers/"
+  }
+ },
+ "pictogrammes_svg_24px": {
+  "plane": "M10.5 3.5c.8-.8 2.2-.8 3 0s.8 2.2 0 3L11 9l2 9-2 2-3.5-6.5L4 17l.5 2.5L3 21l-2-4 4-2 3.5-3.5L2 8l2-2 9 2z",
+  "train": "M7 3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z M4 10h16 M8 14h.01 M16 14h.01 M8 21l2-4 M16 21l-2-4",
+  "bus": "M6 3h12a2 2 0 0 1 2 2v12H4V5a2 2 0 0 1 2-2z M4 11h16 M7 14h.01 M17 14h.01 M7 17v3 M17 17v3",
+  "road": "M8 3 4 21 M16 3l4 18 M12 4v3 M12 10.5v3 M12 17v3",
+  "bridge": "M2 17h20 M2 12c5-6 15-6 20 0 M5 17v-6 M19 17v-6 M9 17V9.6 M15 17V9.6 M12 17V9",
+  "cap": "M2 9.5 12 5l10 4.5L12 14z M6 11.5V16c3 2.5 9 2.5 12 0v-4.5 M22 9.5V15",
+  "book": "M3 5h6a3 3 0 0 1 3 3v12a2.5 2.5 0 0 0-2.5-2.5H3z M21 5h-6a3 3 0 0 0-3 3v12a2.5 2.5 0 0 1 2.5-2.5H21z",
+  "cross": "M9.5 3h5v6.5H21v5h-6.5V21h-5v-6.5H3v-5h6.5z",
+  "drop": "M12 3c4 4.7 6.5 8 6.5 11.2a6.5 6.5 0 0 1-13 0C5.5 11 8 7.7 12 3z",
+  "tower": "M7 3h10v6H7z M9 9l-2 12 M15 9l2 12 M7.8 15h8.4 M12 9v12",
+  "rain": "M7 14a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.3 1.6A3.8 3.8 0 0 1 17.5 14z M8 17.5l-1 3 M12 17.5l-1 3 M16 17.5l-1 3",
+  "waves": "M2 8c2.5-2.5 5 2.5 7.5 0s5 2.5 7.5 0 3.5 0 5 0 M2 13c2.5-2.5 5 2.5 7.5 0s5 2.5 7.5 0 3.5 0 5 0 M2 18c2.5-2.5 5 2.5 7.5 0s5 2.5 7.5 0 3.5 0 5 0",
+  "bolt": "M13 2 4 14h7l-1 8 9-12h-7z",
+  "sun": "M3 15h18l-2.5-7h-13z M9 8l-1 7 M15 8l1 7 M4 11.5h16 M12 15v5 M8 20h8",
+  "light": "M9 18h6 M10 21.5h4 M12 2.5a6 6 0 0 0-3.8 10.7c.7.6 1 1.4 1 2.3V16h5.6v-.5c0-.9.3-1.7 1-2.3A6 6 0 0 0 12 2.5z",
+  "factory": "M3 21V11l5 3v-3l5 3v-3l5 3V4h3v17z M7 17.5h2 M12 17.5h2",
+  "wheat": "M12 22V9 M12 9C9 9 8 6 8 3c3 0 4 3 4 6z M12 9c3 0 4-3 4-6-3 0-4 3-4 6z M12 15c-3 0-4-3-4-6 3 0 4 3 4 6z M12 15c3 0 4-3 4-6-3 0-4 3-4 6z",
+  "market": "M3 9.5 5 4h14l2 5.5z M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0 M5 12v9h14v-9 M10 21v-5h4v5",
+  "fish": "M2.5 12c4-5.5 10.5-5.5 14.5 0-4 5.5-10.5 5.5-14.5 0z M17 12l4.5-4v8z M7 11h.01",
+  "ball": "M12 3a9 9 0 1 0 0 18 9 9 0 1 0 0-18z M12 7.5l4 2.9-1.5 4.7h-5L8 10.4z M12 3v4.5 M16 10.4l4.5-1.4 M14.5 15.1l2.7 3.9 M9.5 15.1 6.8 19 M8 10.4 3.5 9",
+  "people": "M8 7.5a3 3 0 1 0 0 .01 M16.5 7.5a3 3 0 1 0 0 .01 M2.5 20c0-4 2.5-6.5 5.5-6.5s5.5 2.5 5.5 6.5 M13 15c1-1 2.2-1.5 3.5-1.5 3 0 5 2.5 5 6.5",
+  "columns": "M3 9 12 4l9 5z M5.5 9v9 M10 9v9 M14 9v9 M18.5 9v9 M3 20.5h18",
+  "tree": "M12 21.5V15 M12 2.5a5.5 5.5 0 0 1 5.6 5.9 4.8 4.8 0 0 1-1.6 8.6H8a4.8 4.8 0 0 1-1.6-8.6A5.5 5.5 0 0 1 12 2.5z M9.5 21.5h5"
+ },
+ "projets": [
+  {
+   "id": 101,
+   "src": "real",
+   "ref": [
+    "ussein",
+    "cm2907"
+   ],
+   "t": "Université du Sine Saloum El Hadji Ibrahima Niass (USSEIN) : bâtiments de Kaffrine",
+   "s": "educ",
+   "mo": "Ministère de l'Enseignement supérieur · Ministère des Infrastructures",
+   "nv": "État",
+   "r": "Kaffrine",
+   "d": "Kaffrine",
+   "c": "Kaffrine",
+   "x": -15.55,
+   "y": 14.105,
+   "m": 40000000000,
+   "ml": "mobilisés pour l'ensemble de l'université (Fatick et Kaffrine)",
+   "fin": "Budget de l'État",
+   "deb": null,
+   "end": "2026-07",
+   "st": "Livré",
+   "desc": "Réception officielle des unités de formation et de recherche entièrement équipées : salles de cours, laboratoires et bibliothèques. La livraison a été saluée lors du Conseil des ministres du 29 juillet 2026.",
+   "ind": [
+    [
+     "2",
+     "campus réceptionnés"
+    ],
+    [
+     "≈ 40 Md",
+     "FCFA mobilisés"
+    ],
+    [
+     "juil. 2026",
+     "réception"
+    ]
+   ],
+   "ic": "cap",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2026",
+   "av": [
+    100,
+    null
+   ]
+  },
+  {
+   "id": 102,
+   "src": "real",
+   "ref": [
+    "ussein"
+   ],
+   "t": "USSEIN : bâtiments pédagogiques du campus de Fatick",
+   "s": "educ",
+   "mo": "Ministère de l'Enseignement supérieur · Ministère des Infrastructures",
+   "nv": "État",
+   "r": "Fatick",
+   "d": "Fatick",
+   "c": "Fatick",
+   "x": -16.415,
+   "y": 14.345,
+   "m": null,
+   "ml": "montant inclus dans l'enveloppe globale de l'université",
+   "fin": "Budget de l'État",
+   "deb": null,
+   "end": "2026-07",
+   "st": "Livré",
+   "desc": "Second site réceptionné de l'université du Sine Saloum, avec ses salles de classe, laboratoires et espaces de documentation. Inscrit pour 11,7 milliards FCFA dans la LFI 2026 pour la poursuite des travaux.",
+   "ind": [
+    [
+     "11,7 Md",
+     "FCFA inscrits en LFI 2026"
+    ],
+    [
+     "juil. 2026",
+     "réception"
+    ]
+   ],
+   "ic": "cap",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2026",
+   "av": [
+    100,
+    null
+   ]
+  },
+  {
+   "id": 103,
+   "src": "real",
+   "ref": [
+    "zig",
+    "plf"
+   ],
+   "t": "Réhabilitation de l'aéroport de Ziguinchor",
+   "s": "mob",
+   "mo": "Ministère des Infrastructures · Ministère des Transports terrestres et aériens",
+   "nv": "État",
+   "r": "Ziguinchor",
+   "d": "Ziguinchor",
+   "c": "Ziguinchor",
+   "x": -16.281,
+   "y": 12.556,
+   "m": 13000000000,
+   "ml": "coût total annoncé (7 Md en LFR 2025, 6 Md en LFI 2026)",
+   "fin": "LFR 2025 : 7 Md · LFI 2026 : 6 Md",
+   "deb": "2022-04",
+   "end": "2026-04",
+   "st": "Livré",
+   "desc": "Fermé depuis avril 2022, l'aéroport a rouvert le 30 avril 2026 après la réfection de la piste et la mise aux normes internationales des équipements techniques. Le premier vol commercial était programmé le 1er mai.",
+   "ind": [
+    [
+     "13 Md",
+     "FCFA"
+    ],
+    [
+     "4 ans",
+     "de fermeture"
+    ],
+    [
+     "30 avr. 2026",
+     "réouverture"
+    ]
+   ],
+   "ic": "plane",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2026",
+   "av": [
+    100,
+    null
+   ]
+  },
+  {
+   "id": 104,
+   "src": "real",
+   "ref": [
+    "iba",
+    "cm2907"
+   ],
+   "t": "Stade Iba Mar Diop et piscine olympique (JOJ Dakar 2026)",
+   "s": "sport",
+   "mo": "Ministère des Sports · Ministère des Infrastructures",
+   "nv": "État",
+   "r": "Dakar",
+   "d": "Dakar",
+   "c": "Médina",
+   "x": -17.452,
+   "y": 14.686,
+   "m": null,
+   "ml": "montant non communiqué dans la source",
+   "fin": "Budget de l'État (enveloppe JOJ et CAN)",
+   "deb": null,
+   "end": "2026-05",
+   "st": "Livré",
+   "desc": "Réception technique le 19 mai 2026 du stade et de la piscine olympique, ainsi que des terrains de basket, de volley, de la salle de l'INSEPS et d'une salle couverte pour le handball. Des finitions restaient à achever sur la piscine.",
+   "ind": [
+    [
+     "19 mai 2026",
+     "réception technique"
+    ],
+    [
+     "5",
+     "équipements rénovés"
+    ]
+   ],
+   "ic": "ball",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2026",
+   "av": [
+    100,
+    null
+   ]
+  },
+  {
+   "id": 105,
+   "src": "real",
+   "ref": [
+    "agro"
+   ],
+   "t": "Agropole Sud, parc agro-industriel d'Adéane",
+   "s": "agri",
+   "mo": "Ministère de l'Industrie et du Commerce · PRODAC · FONSIS",
+   "nv": "État",
+   "r": "Ziguinchor",
+   "d": "Ziguinchor",
+   "c": "Adéane",
+   "x": -16.03,
+   "y": 12.63,
+   "m": 109000000000,
+   "ml": "budget total réévalué (contre 57 Md initialement)",
+   "fin": "État : 41 Md supplémentaires en 2026 · partenaires",
+   "deb": null,
+   "end": null,
+   "st": "En cours",
+   "desc": "Plateforme de stockage et de transformation des productions agricoles des régions de Ziguinchor, Kolda et Sédhiou, avec accueil d'entreprises. Le chef de l'État a jugé le rythme des travaux satisfaisant lors de sa visite de décembre 2025.",
+   "ind": [
+    [
+     "109 Md",
+     "FCFA"
+    ],
+    [
+     "3",
+     "régions desservies"
+    ]
+   ],
+   "ic": "factory",
+   "axe": "A4",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 106,
+   "src": "real",
+   "ref": [
+    "eau25",
+    "cm2907"
+   ],
+   "t": "Assainissement pluvial de Touba, phase 1",
+   "s": "eau",
+   "mo": "Office national de l'assainissement du Sénégal (ONAS)",
+   "nv": "État",
+   "r": "Diourbel",
+   "d": "Mbacké",
+   "c": "Touba",
+   "x": -15.882,
+   "y": 14.858,
+   "m": 15000000000,
+   "ml": "phase 1 (programme complet : 65 Md FCFA)",
+   "fin": "Budget de l'État",
+   "deb": "2025-12",
+   "end": null,
+   "st": "En cours",
+   "desc": "Lancement le 27 décembre 2025 de la première phase d'un programme de drainage des eaux pluviales prévu sur trois à quatre ans, pour réduire les inondations de la ville sainte. L'eau et l'assainissement à Touba-Mbacké restent une priorité suivie en Conseil des ministres.",
+   "ind": [
+    [
+     "15 Md",
+     "phase 1"
+    ],
+    [
+     "65 Md",
+     "programme total"
+    ],
+    [
+     "3 à 4 ans",
+     "de travaux"
+    ]
+   ],
+   "ic": "rain",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 107,
+   "src": "real",
+   "ref": [
+    "eau25"
+   ],
+   "t": "Réseau de drainage des eaux pluviales de Tivaouane",
+   "s": "eau",
+   "mo": "ONAS",
+   "nv": "État",
+   "r": "Thies",
+   "d": "Tivaouane",
+   "c": "Tivaouane",
+   "x": -16.823,
+   "y": 14.951,
+   "m": 7500000000,
+   "ml": "coût annoncé",
+   "fin": "Budget de l'État",
+   "deb": "2025-11",
+   "end": "2026-07",
+   "st": "En cours",
+   "desc": "Réalisation d'un réseau de 13 km de collecteurs pour une dizaine de quartiers. Travaux lancés le 10 novembre 2025 pour un délai annoncé de huit mois ; réception à confirmer.",
+   "ind": [
+    [
+     "13 km",
+     "de réseau"
+    ],
+    [
+     "≈ 10",
+     "quartiers"
+    ],
+    [
+     "8 mois",
+     "de délai"
+    ]
+   ],
+   "ic": "rain",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": true,
+   "yr": "2026",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 108,
+   "src": "real",
+   "ref": [
+    "eau25"
+   ],
+   "t": "Programme d'eau potable en milieu rural, phase 2 (PAEPMR)",
+   "s": "eau",
+   "mo": "Ministère de l'Hydraulique et de l'Assainissement · OFOR",
+   "nv": "État",
+   "r": "Louga",
+   "d": "Louga",
+   "c": "Fass Touré (lancement)",
+   "x": -16.15,
+   "y": 15.55,
+   "m": 64000000000,
+   "ml": "programme national (toutes régions sauf Dakar)",
+   "fin": "Budget de l'État · partenaires",
+   "deb": "2025-02",
+   "end": null,
+   "st": "En cours",
+   "desc": "Programme national lancé le 3 février 2025 à Fass Touré : 101 forages, 97 châteaux d'eau et 1 450 km de canalisations dans les régions hors Dakar. Le point marque le lieu de lancement, pas l'ensemble des sites.",
+   "ind": [
+    [
+     "101",
+     "forages"
+    ],
+    [
+     "97",
+     "châteaux d'eau"
+    ],
+    [
+     "1 450 km",
+     "de conduites"
+    ]
+   ],
+   "ic": "tower",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 109,
+   "src": "real",
+   "ref": [
+    "eau25"
+   ],
+   "t": "Usine de dessalement d'eau de mer de Ouakam (Mamelles)",
+   "s": "eau",
+   "mo": "SONES",
+   "nv": "État",
+   "r": "Dakar",
+   "d": "Dakar",
+   "c": "Ouakam",
+   "x": -17.508,
+   "y": 14.727,
+   "m": null,
+   "ml": "montant non communiqué dans la source",
+   "fin": "État · partenaires",
+   "deb": "2025-06",
+   "end": null,
+   "st": "En cours",
+   "desc": "Essais de mise en service démarrés en juin 2025, avec une production initiale de 50 000 m³ par jour pour sécuriser l'alimentation en eau de Dakar.",
+   "ind": [
+    [
+     "50 000 m³",
+     "par jour au démarrage"
+    ],
+    [
+     "juin 2025",
+     "essais"
+    ]
+   ],
+   "ic": "waves",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 110,
+   "src": "real",
+   "ref": [
+    "plf",
+    "lfi"
+   ],
+   "t": "Route Mékhé – Pékès – Thilmakha",
+   "s": "route",
+   "mo": "Ministère des Infrastructures · AGEROUTE",
+   "nv": "État",
+   "r": "Thies",
+   "d": "Tivaouane",
+   "c": "Mékhé",
+   "x": -16.625,
+   "y": 15.112,
+   "m": 8500000000,
+   "ml": "inscrits au budget 2026",
+   "fin": "LFI 2026",
+   "deb": null,
+   "end": null,
+   "st": "En cours",
+   "desc": "Projet routier prioritaire dont la finalisation est inscrite au budget 2026, pour relier les zones agricoles du Cayor au réseau national.",
+   "ind": [
+    [
+     "8,5 Md",
+     "FCFA en 2026"
+    ]
+   ],
+   "ic": "road",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 111,
+   "src": "real",
+   "ref": [
+    "plf",
+    "lfi"
+   ],
+   "t": "Route Sandiara – Ndiaganiaw",
+   "s": "route",
+   "mo": "Ministère des Infrastructures · AGEROUTE",
+   "nv": "État",
+   "r": "Thies",
+   "d": "Mbour",
+   "c": "Sandiara",
+   "x": -16.78,
+   "y": 14.43,
+   "m": 3500000000,
+   "ml": "inscrits au budget 2026",
+   "fin": "LFI 2026",
+   "deb": null,
+   "end": null,
+   "st": "En cours",
+   "desc": "Liaison routière inscrite dans le budget 2026, desservant la zone économique spéciale de Sandiara.",
+   "ind": [
+    [
+     "3,5 Md",
+     "FCFA en 2026"
+    ]
+   ],
+   "ic": "road",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 112,
+   "src": "real",
+   "ref": [
+    "lfi"
+   ],
+   "t": "Polyclinique de l'Hôpital principal de Dakar",
+   "s": "sante",
+   "mo": "Ministère des Forces armées",
+   "nv": "État",
+   "r": "Dakar",
+   "d": "Dakar",
+   "c": "Plateau",
+   "x": -17.437,
+   "y": 14.664,
+   "m": 10500000000,
+   "ml": "inscrits pour la construction et l'équipement",
+   "fin": "LFI 2026",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Construction et équipement d'une polyclinique au sein de l'Hôpital principal de Dakar, inscrits dans la loi de finances 2026.",
+   "ind": [
+    [
+     "10,5 Md",
+     "FCFA"
+    ]
+   ],
+   "ic": "cross",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 113,
+   "src": "real",
+   "ref": [
+    "lfi"
+   ],
+   "t": "Électrification rurale Louga – Linguère – Kébémer",
+   "s": "energie",
+   "mo": "Ministère de l'Énergie · ASER",
+   "nv": "État",
+   "r": "Louga",
+   "d": "Kébémer",
+   "c": "Kébémer",
+   "x": -16.443,
+   "y": 15.371,
+   "m": 60000000000,
+   "ml": "concession inscrite en LFI 2026",
+   "fin": "LFI 2026 · concessionnaire",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Concession d'électrification rurale couvrant les départements de Louga, Linguère et Kébémer, l'un des projets phares de la LFI 2026 aux côtés du programme national d'urgence (PNUER).",
+   "ind": [
+    [
+     "60 Md",
+     "FCFA"
+    ],
+    [
+     "3",
+     "départements"
+    ]
+   ],
+   "ic": "bolt",
+   "axe": "A4",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 114,
+   "src": "real",
+   "ref": [
+    "lfi"
+   ],
+   "t": "Agropole Centre",
+   "s": "agri",
+   "mo": "Ministère de l'Industrie et du Commerce",
+   "nv": "État",
+   "r": "Kaolack",
+   "d": "Kaolack",
+   "c": "Kaolack (localisation indicative)",
+   "x": -16.09,
+   "y": 14.12,
+   "m": 50400000000,
+   "ml": "inscrits en LFI 2026",
+   "fin": "LFI 2026 · partenaires",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Pôle de transformation agro-industrielle du bassin arachidier (Sine Saloum). La source ne précise pas le site exact ; le point est placé à Kaolack à titre indicatif.",
+   "ind": [
+    [
+     "50,4 Md",
+     "FCFA"
+    ]
+   ],
+   "ic": "wheat",
+   "axe": "A4",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 115,
+   "src": "real",
+   "ref": [
+    "plf",
+    "lfi"
+   ],
+   "t": "Réhabilitation de la ligne ferroviaire Dakar – Tambacounda (phase 1)",
+   "s": "mob",
+   "mo": "Ministère des Infrastructures · Grands Trains du Sénégal",
+   "nv": "État",
+   "r": "Tambacounda",
+   "d": "Tambacounda",
+   "c": "Gare de Tambacounda",
+   "x": -13.668,
+   "y": 13.772,
+   "m": 3000000000,
+   "ml": "inscrits en 2026 pour la phase 1",
+   "fin": "PLF / LFI 2026",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Première phase de la remise en état de la ligne Dakar – Kidira, sur le tronçon Dakar – Tambacounda. Le point marque la gare terminus de la phase.",
+   "ind": [
+    [
+     "3 Md",
+     "FCFA en 2026"
+    ]
+   ],
+   "ic": "train",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 116,
+   "src": "real",
+   "ref": [
+    "plf",
+    "lfi"
+   ],
+   "t": "Université de Matam",
+   "s": "educ",
+   "mo": "Ministère de l'Enseignement supérieur",
+   "nv": "État",
+   "r": "Matam",
+   "d": "Matam",
+   "c": "Matam",
+   "x": -13.255,
+   "y": 15.655,
+   "m": 400000000,
+   "ml": "inscrits en 2026",
+   "fin": "LFI 2026",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Crédits 2026 pour la construction et la réhabilitation des infrastructures de l'université de Matam.",
+   "ind": [
+    [
+     "0,4 Md",
+     "FCFA en 2026"
+    ]
+   ],
+   "ic": "cap",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 117,
+   "src": "real",
+   "ref": [
+    "plf",
+    "lfi"
+   ],
+   "t": "Université du Sénégal oriental",
+   "s": "educ",
+   "mo": "Ministère de l'Enseignement supérieur",
+   "nv": "État",
+   "r": "Tambacounda",
+   "d": "Tambacounda",
+   "c": "Tambacounda",
+   "x": -13.64,
+   "y": 13.8,
+   "m": 400000000,
+   "ml": "inscrits en 2026",
+   "fin": "LFI 2026",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Crédits 2026 pour la poursuite des chantiers de l'université du Sénégal oriental.",
+   "ind": [
+    [
+     "0,4 Md",
+     "FCFA en 2026"
+    ]
+   ],
+   "ic": "cap",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 118,
+   "src": "real",
+   "ref": [
+    "plf"
+   ],
+   "t": "Nouveau pont de Ziguinchor (1 280 m)",
+   "s": "route",
+   "mo": "Ministère des Infrastructures",
+   "nv": "État",
+   "r": "Ziguinchor",
+   "d": "Ziguinchor",
+   "c": "Ziguinchor",
+   "x": -16.262,
+   "y": 12.585,
+   "m": null,
+   "ml": "montant non communiqué dans la source",
+   "fin": "Budget de l'État",
+   "deb": null,
+   "end": null,
+   "st": "Programmé",
+   "desc": "Ouvrage de 1 280 m sur le fleuve Casamance, en complément des ponts Émile-Badiane et de Tobor, annoncé dans le programme des grands chantiers 2026.",
+   "ind": [
+    [
+     "1 280 m",
+     "de longueur"
+    ]
+   ],
+   "ic": "bridge",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "nd",
+   "av": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": 1,
+   "src": "fake",
+   "t": "Centre de santé de Keur Massar",
+   "s": "sante",
+   "mo": "Ministère de la Santé et de l'Action sociale",
+   "nv": "État",
+   "r": "Dakar",
+   "d": "Keur Massar",
+   "c": "Keur Massar Nord",
+   "x": -17.312,
+   "y": 14.783,
+   "m": 2850000000,
+   "ml": "coût total TTC",
+   "fin": "BCI 100 %",
+   "deb": "2023-03",
+   "end": "2025-01",
+   "st": "Livré",
+   "desc": "Maternité de 24 lits, bloc opératoire, laboratoire, imagerie et pharmacie pour désengorger les structures de Pikine.",
+   "ind": [
+    [
+     "180 000",
+     "habitants desservis"
+    ],
+    [
+     "24",
+     "lits de maternité"
+    ],
+    [
+     "62",
+     "emplois créés"
+    ]
+   ],
+   "ic": "cross",
+   "axe": "A2",
+   "clim": false,
+   "gen": true,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 2,
+   "src": "fake",
+   "t": "Promenade de la Corniche Ouest",
+   "s": "env",
+   "mo": "Ville de Dakar",
+   "nv": "Collectivité",
+   "r": "Dakar",
+   "d": "Dakar",
+   "c": "Fann-Point E-Amitié",
+   "x": -17.47,
+   "y": 14.7,
+   "m": 1240000000,
+   "ml": "coût total TTC",
+   "fin": "Budget de la Ville 55 % · Coopération décentralisée 45 %",
+   "deb": "2023-10",
+   "end": "2024-12",
+   "st": "Livré",
+   "desc": "2,4 km de cheminement piéton et cyclable, éclairage LED, mobilier urbain, plantations et agrès de sport en accès libre.",
+   "ind": [
+    [
+     "2,4 km",
+     "de promenade"
+    ],
+    [
+     "320",
+     "arbres plantés"
+    ],
+    [
+     "14",
+     "agrès"
+    ]
+   ],
+   "ic": "tree",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 3,
+   "src": "fake",
+   "t": "Réhabilitation du marché central de Thiès",
+   "s": "marche",
+   "mo": "Ville de Thiès",
+   "nv": "Collectivité",
+   "r": "Thies",
+   "d": "Thiès",
+   "c": "Thiès Nord",
+   "x": -16.926,
+   "y": 14.791,
+   "m": 1920000000,
+   "ml": "coût total TTC",
+   "fin": "Budget de la Ville 30 % · FECL 40 % · Prêt 30 %",
+   "deb": "2022-11",
+   "end": "2024-06",
+   "st": "Livré",
+   "desc": "Halle couverte de 640 cantines aux normes, réseau anti-incendie, toilettes publiques et voirie de desserte.",
+   "ind": [
+    [
+     "640",
+     "cantines"
+    ],
+    [
+     "1 800",
+     "commerçants"
+    ],
+    [
+     "+38 %",
+     "recettes de place"
+    ]
+   ],
+   "ic": "market",
+   "axe": "A4",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 4,
+   "src": "fake",
+   "t": "Lycée technique de Mbour",
+   "s": "educ",
+   "mo": "Ministère de l'Éducation nationale",
+   "nv": "État",
+   "r": "Thies",
+   "d": "Mbour",
+   "c": "Mbour",
+   "x": -16.962,
+   "y": 14.418,
+   "m": 3400000000,
+   "ml": "coût total TTC",
+   "fin": "BCI 70 % · Partenaire 30 %",
+   "deb": "2022-09",
+   "end": "2024-10",
+   "st": "Livré",
+   "desc": "24 salles, 6 ateliers (électricité, froid, mécanique, hôtellerie) et internat de 120 places.",
+   "ind": [
+    [
+     "1 200",
+     "élèves"
+    ],
+    [
+     "6",
+     "filières"
+    ]
+   ],
+   "ic": "book",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 5,
+   "src": "fake",
+   "t": "Digue de protection de Guet Ndar",
+   "s": "env",
+   "mo": "Ministère de l'Environnement",
+   "nv": "État",
+   "r": "Saint Louis",
+   "d": "Saint-Louis",
+   "c": "Saint-Louis (Guet Ndar)",
+   "x": -16.508,
+   "y": 16.018,
+   "m": 6800000000,
+   "ml": "coût total TTC",
+   "fin": "BCI 25 % · Fonds climat 75 %",
+   "deb": "2023-01",
+   "end": "2026-04",
+   "st": "Livré",
+   "desc": "Enrochement de 3,6 km protégeant les quartiers de pêcheurs contre l'érosion côtière, avec relogement accompagné.",
+   "ind": [
+    [
+     "3,6 km",
+     "de digue"
+    ],
+    [
+     "12 000",
+     "habitants protégés"
+    ]
+   ],
+   "ic": "waves",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "2026",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 6,
+   "src": "fake",
+   "t": "Piste de production Richard-Toll – Dagana",
+   "s": "route",
+   "mo": "Conseil départemental de Dagana",
+   "nv": "Collectivité",
+   "r": "Saint Louis",
+   "d": "Dagana",
+   "c": "Richard-Toll",
+   "x": -15.702,
+   "y": 16.462,
+   "m": 2100000000,
+   "ml": "coût total TTC",
+   "fin": "Budget départemental 20 % · FDD 80 %",
+   "deb": "2024-02",
+   "end": "2025-07",
+   "st": "Livré",
+   "desc": "28 km de piste bitumée reliant les périmètres rizicoles au réseau national.",
+   "ind": [
+    [
+     "28 km",
+     "bitumés"
+    ],
+    [
+     "9",
+     "ouvrages d'art"
+    ]
+   ],
+   "ic": "road",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 7,
+   "src": "fake",
+   "t": "Château d'eau de Keur Momar Sarr",
+   "s": "eau",
+   "mo": "Commune de Keur Momar Sarr",
+   "nv": "Collectivité",
+   "r": "Louga",
+   "d": "Louga",
+   "c": "Keur Momar Sarr",
+   "x": -15.968,
+   "y": 15.918,
+   "m": 1620000000,
+   "ml": "coût total TTC",
+   "fin": "Budget communal 10 % · FDD 90 %",
+   "deb": "2023-05",
+   "end": "2024-09",
+   "st": "Livré",
+   "desc": "Réservoir de 300 m³, pompage solaire et 42 km de réseau pour 17 villages autour du lac de Guiers.",
+   "ind": [
+    [
+     "300 m³",
+     "de stockage"
+    ],
+    [
+     "17",
+     "villages"
+    ]
+   ],
+   "ic": "tower",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 9,
+   "src": "fake",
+   "t": "Éclairage public solaire de Kaolack",
+   "s": "energie",
+   "mo": "Ville de Kaolack",
+   "nv": "Collectivité",
+   "r": "Kaolack",
+   "d": "Kaolack",
+   "c": "Kaolack",
+   "x": -16.073,
+   "y": 14.155,
+   "m": 950000000,
+   "ml": "coût total TTC",
+   "fin": "Budget de la Ville 35 % · Programme national 65 %",
+   "deb": "2024-01",
+   "end": "2024-11",
+   "st": "Livré",
+   "desc": "1 450 lampadaires solaires sur les axes principaux, marchés et abords des écoles.",
+   "ind": [
+    [
+     "1 450",
+     "lampadaires"
+    ],
+    [
+     "-32 %",
+     "facture d'énergie"
+    ]
+   ],
+   "ic": "light",
+   "axe": "A4",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 10,
+   "src": "fake",
+   "t": "Stade municipal de Fatick",
+   "s": "sport",
+   "mo": "Ville de Fatick",
+   "nv": "Collectivité",
+   "r": "Fatick",
+   "d": "Fatick",
+   "c": "Fatick",
+   "x": -16.4,
+   "y": 14.33,
+   "m": 1300000000,
+   "ml": "coût total TTC",
+   "fin": "Budget de la Ville 25 % · Ministère des Sports 75 %",
+   "deb": "2023-06",
+   "end": "2025-03",
+   "st": "Livré",
+   "desc": "Pelouse synthétique, tribune couverte de 3 000 places et piste d'athlétisme.",
+   "ind": [
+    [
+     "3 000",
+     "places"
+    ],
+    [
+     "8",
+     "clubs"
+    ]
+   ],
+   "ic": "ball",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 11,
+   "src": "fake",
+   "t": "Poste de santé de Nganda",
+   "s": "sante",
+   "mo": "Commune de Nganda",
+   "nv": "Collectivité",
+   "r": "Kaffrine",
+   "d": "Kaffrine",
+   "c": "Nganda",
+   "x": -15.548,
+   "y": 13.832,
+   "m": 320000000,
+   "ml": "coût total TTC",
+   "fin": "Budget communal 30 % · FDD 70 %",
+   "deb": "2024-03",
+   "end": "2025-02",
+   "st": "Livré",
+   "desc": "Salle d'accouchement, logement de l'infirmier, forage et kit solaire pour la chaîne du froid.",
+   "ind": [
+    [
+     "11 000",
+     "habitants"
+    ],
+    [
+     "15 km",
+     "de trajet évités"
+    ]
+   ],
+   "ic": "cross",
+   "axe": "A2",
+   "clim": false,
+   "gen": true,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 12,
+   "src": "fake",
+   "t": "Collège de proximité de Koussanar",
+   "s": "educ",
+   "mo": "Conseil départemental de Tambacounda",
+   "nv": "Collectivité",
+   "r": "Tambacounda",
+   "d": "Tambacounda",
+   "c": "Koussanar",
+   "x": -14.078,
+   "y": 13.872,
+   "m": 480000000,
+   "ml": "coût total TTC",
+   "fin": "Budget départemental 15 % · FDD 85 %",
+   "deb": "2023-08",
+   "end": "2024-09",
+   "st": "Livré",
+   "desc": "8 salles de classe, bloc administratif et latrines séparées filles et garçons.",
+   "ind": [
+    [
+     "480",
+     "élèves"
+    ],
+    [
+     "52 %",
+     "de filles"
+    ]
+   ],
+   "ic": "book",
+   "axe": "A2",
+   "clim": false,
+   "gen": true,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 13,
+   "src": "fake",
+   "t": "Piste Kédougou – Salémata",
+   "s": "route",
+   "mo": "Conseil départemental de Kédougou",
+   "nv": "Collectivité",
+   "r": "Kedougou",
+   "d": "Salémata",
+   "c": "Salémata",
+   "x": -12.62,
+   "y": 12.63,
+   "m": 2900000000,
+   "ml": "coût total TTC",
+   "fin": "Budget départemental 10 % · FDD 40 % · Partenaire 50 %",
+   "deb": "2025-05",
+   "end": "2027-03",
+   "st": "En cours",
+   "desc": "Aménagement de 46 km de piste en latérite traitée et de 3 radiers pour désenclaver le pays bassari.",
+   "ind": [
+    [
+     "46 km",
+     "de piste"
+    ],
+    [
+     "55 %",
+     "avancement"
+    ]
+   ],
+   "ic": "road",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2027",
+   "av": [
+    55,
+    48
+   ]
+  },
+  {
+   "id": 14,
+   "src": "fake",
+   "t": "Mini-réseaux solaires de Médina Yoro Foulah",
+   "s": "energie",
+   "mo": "Commune de Médina Yoro Foulah",
+   "nv": "Collectivité",
+   "r": "Kolda",
+   "d": "Médina Yoro Foulah",
+   "c": "Médina Yoro Foulah",
+   "x": -14.725,
+   "y": 13.292,
+   "m": 780000000,
+   "ml": "coût total TTC",
+   "fin": "Budget communal 10 % · ONG 90 %",
+   "deb": "2023-09",
+   "end": "2024-08",
+   "st": "Livré",
+   "desc": "Raccordement de 12 villages, des écoles et des postes de santé à des mini-réseaux solaires.",
+   "ind": [
+    [
+     "12",
+     "villages"
+    ],
+    [
+     "1 150",
+     "ménages"
+    ]
+   ],
+   "ic": "sun",
+   "axe": "A4",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "2024",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 15,
+   "src": "fake",
+   "t": "Quai de pêche de Sédhiou",
+   "s": "marche",
+   "mo": "Commune de Sédhiou",
+   "nv": "Collectivité",
+   "r": "Sedhiou",
+   "d": "Sédhiou",
+   "c": "Sédhiou",
+   "x": -15.556,
+   "y": 12.708,
+   "m": 660000000,
+   "ml": "coût total TTC",
+   "fin": "Budget communal 20 % · Coopération décentralisée 80 %",
+   "deb": "2024-01",
+   "end": "2025-05",
+   "st": "Livré",
+   "desc": "Quai de débarquement, halle de mareyage, chambre froide de 20 tonnes et fabrique de glace.",
+   "ind": [
+    [
+     "20 t",
+     "de froid"
+    ],
+    [
+     "350",
+     "pêcheurs et mareyeuses"
+    ]
+   ],
+   "ic": "fish",
+   "axe": "A4",
+   "clim": false,
+   "gen": true,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 16,
+   "src": "fake",
+   "t": "Centre culturel départemental de Ziguinchor",
+   "s": "culture",
+   "mo": "Conseil départemental de Ziguinchor",
+   "nv": "Collectivité",
+   "r": "Ziguinchor",
+   "d": "Ziguinchor",
+   "c": "Ziguinchor",
+   "x": -16.29,
+   "y": 12.575,
+   "m": 540000000,
+   "ml": "coût total TTC",
+   "fin": "Budget départemental 40 % · Ministère de la Culture 60 %",
+   "deb": "2024-04",
+   "end": "2025-06",
+   "st": "Livré",
+   "desc": "Salle de spectacle de 450 places, médiathèque et studio d'enregistrement pour les jeunes artistes.",
+   "ind": [
+    [
+     "450",
+     "places"
+    ],
+    [
+     "6 000",
+     "ouvrages"
+    ]
+   ],
+   "ic": "columns",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 17,
+   "src": "fake",
+   "t": "Forages multi-villages d'Ourossogui",
+   "s": "eau",
+   "mo": "Commune d'Ourossogui",
+   "nv": "Collectivité",
+   "r": "Matam",
+   "d": "Matam",
+   "c": "Ourossogui",
+   "x": -13.318,
+   "y": 15.605,
+   "m": 900000000,
+   "ml": "coût total TTC",
+   "fin": "Budget communal 10 % · FDD 50 % · ONG 40 %",
+   "deb": "2025-02",
+   "end": "2026-11",
+   "st": "En cours",
+   "desc": "Deux forages profonds, une station de défluoration et 26 km de réseau vers les villages du Diéri.",
+   "ind": [
+    [
+     "2",
+     "forages"
+    ],
+    [
+     "60 %",
+     "avancement"
+    ]
+   ],
+   "ic": "drop",
+   "axe": "A3",
+   "clim": true,
+   "gen": false,
+   "late": false,
+   "yr": "2026",
+   "av": [
+    60,
+    65
+   ]
+  },
+  {
+   "id": 18,
+   "src": "fake",
+   "t": "Gare routière de Diamniadio",
+   "s": "mob",
+   "mo": "Conseil départemental de Rufisque",
+   "nv": "Collectivité",
+   "r": "Dakar",
+   "d": "Rufisque",
+   "c": "Diamniadio",
+   "x": -17.178,
+   "y": 14.722,
+   "m": 2400000000,
+   "ml": "coût total TTC",
+   "fin": "Budget départemental 25 % · PPP 75 %",
+   "deb": "2023-02",
+   "end": "2025-04",
+   "st": "Livré",
+   "desc": "140 quais pour bus et taxis interurbains, salle d'attente, billetterie et liaison piétonne avec le TER.",
+   "ind": [
+    [
+     "140",
+     "quais"
+    ],
+    [
+     "35 000",
+     "voyageurs par jour"
+    ]
+   ],
+   "ic": "bus",
+   "axe": "A3",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 19,
+   "src": "fake",
+   "t": "Maison des jeunes de Linguère",
+   "s": "sport",
+   "mo": "Commune de Linguère",
+   "nv": "Collectivité",
+   "r": "Louga",
+   "d": "Linguère",
+   "c": "Linguère",
+   "x": -15.115,
+   "y": 15.393,
+   "m": 410000000,
+   "ml": "coût total TTC",
+   "fin": "Budget communal 35 % · FDD 65 %",
+   "deb": "2024-06",
+   "end": "2025-08",
+   "st": "Livré",
+   "desc": "Espace numérique de 30 postes, salles de formation et terrain de basket.",
+   "ind": [
+    [
+     "30",
+     "postes"
+    ],
+    [
+     "2 500",
+     "jeunes inscrits"
+    ]
+   ],
+   "ic": "people",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2025",
+   "av": [
+    100,
+    100
+   ]
+  },
+  {
+   "id": 20,
+   "src": "fake",
+   "t": "Marché hebdomadaire de Diaobé",
+   "s": "marche",
+   "mo": "Commune de Kounkané",
+   "nv": "Collectivité",
+   "r": "Kolda",
+   "d": "Vélingara",
+   "c": "Diaobé",
+   "x": -14.42,
+   "y": 13.2,
+   "m": 1150000000,
+   "ml": "coût prévisionnel",
+   "fin": "Budget communal 15 % · FDD 85 %",
+   "deb": null,
+   "end": "2027-06",
+   "st": "Programmé",
+   "desc": "Aménagement du loumo sous-régional : aire de stationnement poids lourds, hangars, magasins de stockage et poste de sécurité.",
+   "ind": [
+    [
+     "400",
+     "étals"
+    ],
+    [
+     "5",
+     "pays fréquentant le marché"
+    ]
+   ],
+   "ic": "market",
+   "axe": "A4",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2027",
+   "av": [
+    0,
+    5
+   ]
+  },
+  {
+   "id": 21,
+   "src": "fake",
+   "t": "Bibliothèque municipale de Saint-Louis",
+   "s": "culture",
+   "mo": "Ville de Saint-Louis",
+   "nv": "Collectivité",
+   "r": "Saint Louis",
+   "d": "Saint-Louis",
+   "c": "Île de Saint-Louis",
+   "x": -16.505,
+   "y": 16.03,
+   "m": 390000000,
+   "ml": "coût prévisionnel",
+   "fin": "Budget de la Ville 40 % · Coopération décentralisée 60 %",
+   "deb": null,
+   "end": "2027-01",
+   "st": "Programmé",
+   "desc": "Réhabilitation d'un bâtiment colonial classé pour accueillir une bibliothèque et un fonds d'archives municipales.",
+   "ind": [
+    [
+     "1",
+     "bâtiment classé"
+    ],
+    [
+     "12 000",
+     "ouvrages prévus"
+    ]
+   ],
+   "ic": "book",
+   "axe": "A2",
+   "clim": false,
+   "gen": false,
+   "late": false,
+   "yr": "2027",
+   "av": [
+    0,
+    0
+   ]
+  }
+ ]
+}
