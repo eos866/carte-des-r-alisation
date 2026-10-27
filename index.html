@@ -297,6 +297,31 @@ dl.facts dd{margin:0;min-width:0}
 .tourbar .pbar{width:90px;height:4px;border-radius:2px;background:rgba(127,127,127,.4);overflow:hidden}
 .tourbar .pbar i{display:block;height:100%;background:var(--gold);width:0}
 
+/* Fonds de plan */
+#tiles image{pointer-events:none}
+.basemenu{position:absolute;top:12px;right:60px;z-index:12;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:8px;display:grid;grid-template-columns:repeat(3,92px);gap:8px;max-width:calc(100% - 72px)}
+.basemenu .bh{grid-column:1/-1;font:700 .72rem var(--f-body);text-transform:uppercase;letter-spacing:.09em;color:var(--muted);padding:2px 4px}
+.basemenu .bn{grid-column:1/-1;font-size:.76rem;color:var(--wip);background:var(--wip-bg);border-radius:6px;padding:6px 8px}
+.bopt{border:2px solid transparent;border-radius:10px;background:none;padding:0;cursor:pointer;text-align:left;font-size:.78rem;color:var(--fg);display:flex;flex-direction:column;gap:4px}
+.bopt .th{height:56px;border-radius:8px;overflow:hidden;display:block;background:var(--land)}
+.bopt span:last-child{padding:0 4px 4px;line-height:1.2}
+.bopt[aria-checked="true"]{border-color:var(--accent)}
+.bopt[aria-checked="true"] span:last-child{font-weight:700}
+.attrib{position:absolute;right:0;bottom:0;z-index:5;font-size:.66rem;color:var(--muted);background:color-mix(in srgb,var(--panel) 80%,transparent);padding:2px 6px;border-top-left-radius:6px;max-width:70%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.attrib:empty{display:none}
+#map.onbase .region{fill:rgba(0,0,0,0);stroke-width:1.3}
+#map.onbase .region:hover{fill:rgba(255,255,255,.14)}
+#map.onbase .region.dim{opacity:1;fill:rgba(0,0,0,.38)}
+#map.onbase .region.sel{fill:rgba(255,255,255,.06);stroke:var(--gold);stroke-width:2.6}
+#map.onbase.bdark .region{stroke:rgba(255,255,255,.85)}
+#map.onbase.blight .region{stroke:var(--accent)}
+#map.onbase .rlabel{paint-order:stroke;stroke-width:3px;stroke-linejoin:round}
+#map.onbase.bdark .rlabel,#map.onbase.bdark .rval{fill:#fff;stroke:rgba(0,0,0,.65)}
+#map.onbase.blight .rlabel,#map.onbase.blight .rval{fill:#2b2b22;stroke:rgba(255,255,255,.85)}
+#map.onbase .rval{paint-order:stroke;stroke-width:3px}
+#map.onbase .sea-label{display:none}
+#map.onbase.choro .region{fill-opacity:.72}
+
 /* ---------- Pied de page ---------- */
 .foot{background:var(--hero);color:var(--hero-fg);font-size:.9rem}
 .foot .wrap{padding-block:40px 28px;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
@@ -345,15 +370,15 @@ html{scroll-behavior:smooth}
 <section class="hero" aria-labelledby="hero-t">
   <div class="wrap">
     <div class="it">
-      <div class="eyebrow">Redevabilité · Mandat 2024 – 2029</div>
-      <h1 id="hero-t">Ce que l'action publique <em>a construit</em>, territoire par territoire</h1>
-      <p>Projets livrés, en chantier ou programmés par l'État et les collectivités, avec leur montant, leur financement, leurs photos et le document officiel qui les annonce.</p>
+      <div class="eyebrow">Agenda national de transformation · Sénégal 2050</div>
+      <h1 id="hero-t">Le Sénégal se transforme. <em>Voici la preuve</em>, territoire par territoire.</h1>
+      <p>Routes, universités, forages, centres de santé : de Ziguinchor à Matam, l'État et les collectivités territoriales tiennent leurs engagements. Chaque réalisation est localisée, chiffrée et adossée au document officiel qui l'annonce, pour que chaque citoyen juge sur pièces.</p>
     </div>
     <div class="hstats" aria-label="Chiffres clés">
-      <div><b id="h-n">–</b><span>projets cartographiés</span></div>
-      <div><b id="h-m">–</b><span>FCFA de montants publiés</span></div>
-      <div><b id="h-r">–</b><span>régions sur 14 couvertes</span></div>
-      <div><b id="h-s">–</b><span>projets réels sourcés</span></div>
+      <div><b id="h-n">–</b><span>réalisations et chantiers</span></div>
+      <div><b id="h-m">–</b><span>FCFA investis et engagés</span></div>
+      <div><b id="h-r">–</b><span>régions sur 14 concernées</span></div>
+      <div><b id="h-s">–</b><span>projets adossés à une source officielle</span></div>
     </div>
   </div>
 </section>
@@ -443,7 +468,10 @@ html{scroll-behavior:smooth}
         <button type="button" id="zin" aria-label="Zoomer">+</button>
         <button type="button" id="zout" aria-label="Dézoomer">−</button>
         <button type="button" id="zreset" aria-label="Revenir à la vue nationale">⌂</button>
+        <button type="button" id="baseBtn" aria-label="Choisir le fond de plan" aria-expanded="false" aria-controls="baseMenu"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5z M2 13l10 5 10-5 M2 17.5l10 5 10-5"/></svg></button>
       </div>
+      <div class="basemenu" id="baseMenu" hidden role="radiogroup" aria-label="Fond de plan"></div>
+      <div class="attrib" id="attrib"></div>
       <div class="legend" aria-label="Légende">
         <div class="row choro-leg" id="choroLeg" hidden><span>0</span><i></i><span id="choroMax">–</span><span>FCFA publiés</span></div>
         <div class="row" id="ptsLeg"><span><i class="sym"></i>Livré</span><span><i class="sym wip"></i>En chantier</span><span><i class="sym plan"></i>Programmé</span><span>Taille selon le montant</span></div>
@@ -674,6 +702,7 @@ const svg = d3.select("#map").attr("viewBox",`0 0 ${W} ${H}`).attr("preserveAspe
 const proj = d3.geoMercator().fitExtent([[40,40],[W-40,H-40]], GEO);
 const path = d3.geoPath(proj);
 const root = svg.append("g");
+const gTiles = svg.insert("g",":first-child").attr("id","tiles");
 const gReg = root.append("g");
 svg.append("text").attr("class","sea-label").attr("x",36).attr("y",H*0.5).attr("transform",`rotate(-90 36 ${H*0.5})`).attr("text-anchor","middle").text("OCÉAN ATLANTIQUE");
 const gLab = svg.append("g"), gMk = svg.append("g");
@@ -692,7 +721,7 @@ const rad = p => 11 + (p.m ? Math.min(Math.sqrt(p.m/1e9)*1.6, 11) : 0);
 
 const zoom = d3.zoom().scaleExtent([1,14]).translateExtent([[-250,-250],[W+250,H+250]])
   .filter(e => (e.type!=="wheel" || e.ctrlKey || e.metaKey || document.activeElement===svg.node() || hoverMap) && !e.button)
-  .on("zoom",e=>{T=e.transform; root.attr("transform",T); place(); hideTip();});
+  .on("zoom",e=>{T=e.transform; root.attr("transform",T); place(); hideTip(); drawTiles();});
 let hoverMap=false;
 svg.on("mouseenter",()=>hoverMap=true).on("mouseleave",()=>hoverMap=false);
 svg.call(zoom).on("dblclick.zoom",null);
@@ -745,6 +774,69 @@ function zoomRegion(n){
 document.getElementById("zin").onclick=()=>svg.transition().duration(dur(250)).call(zoom.scaleBy,1.6);
 document.getElementById("zout").onclick=()=>svg.transition().duration(dur(250)).call(zoom.scaleBy,1/1.6);
 document.getElementById("zreset").onclick=()=>{ setRegion("",false); svg.transition().duration(dur(500)).call(zoom.transform,d3.zoomIdentity); };
+
+
+/* ---------- Fonds de plan (tuiles XYZ en projection Web Mercator) ---------- */
+const BASES = {
+  ortho:{l:"Orthophoto", u:"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", a:"Imagerie © Esri, Maxar, Earthstar Geographics", tone:"dark", max:19, th:"linear-gradient(135deg,#4a5a33,#8c7a4f 45%,#2f5b6b)"},
+  hybride:{l:"Ortho + noms", u:"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", o:"https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}", a:"Imagerie et noms © Esri, Maxar, Earthstar Geographics", tone:"dark", max:19, th:"linear-gradient(135deg,#4a5a33,#8c7a4f 45%,#2f5b6b)"},
+  osm:{l:"Plan OpenStreetMap", u:"https://tile.openstreetmap.org/{z}/{x}/{y}.png", a:"© les contributeurs d'OpenStreetMap", tone:"light", max:19, th:"linear-gradient(135deg,#f2efe9,#cfe3c4 50%,#aad3df)"},
+  clair:{l:"Plan clair", u:"https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", a:"© OpenStreetMap, © CARTO", tone:"light", max:19, th:"linear-gradient(135deg,#fafafa,#e8e8e8 50%,#d4dadc)"},
+  sombre:{l:"Plan sombre", u:"https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png", a:"© OpenStreetMap, © CARTO", tone:"dark", max:19, th:"linear-gradient(135deg,#2b2d30,#1b1c1e 50%,#3a3d42)"},
+  relief:{l:"Relief", u:"https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}", a:"© Esri et contributeurs", tone:"light", max:18, th:"linear-gradient(135deg,#e7dfc9,#c9d6b0 50%,#b9d2dc)"},
+  none:{l:"Sans fond", a:"", tone:null, th:"linear-gradient(135deg,var(--land),var(--sea))"}
+};
+let BASE = "ortho", tileOk = 0, tileErr = 0, baseBlocked = false;
+const tileURL = (u,z,x,y) => u.replace("{z}",z).replace("{x}",x).replace("{y}",y);
+function drawTiles(){
+  const b = BASES[BASE];
+  if(!b.u){ gTiles.selectAll("image").remove(); return; }
+  const el = svg.node(), bw = el.clientWidth||W, bh = el.clientHeight||H;
+  const sf = Math.min(bw/W, bh/H) * (window.devicePixelRatio>1 ? 1.4 : 1);
+  const S = proj.scale()*2*Math.PI*T.k;                       // largeur du monde en unités de la carte
+  const z = Math.max(0, Math.min(b.max, Math.round(Math.log2(S*sf/256))));
+  const n = 2**z, ts = S/n;
+  const [tx,ty] = proj.translate();
+  const ox = T.applyX(tx - Math.PI*proj.scale()), oy = T.applyY(ty - Math.PI*proj.scale());
+  // zone visible en unités du viewBox (le cadre « meet » peut déborder)
+  const padX = (bw/Math.min(bw/W,bh/H) - W)/2, padY = (bh/Math.min(bw/W,bh/H) - H)/2;
+  const x0 = Math.max(0, Math.floor((-padX-ox)/ts)), x1 = Math.min(n-1, Math.floor((W+padX-ox)/ts));
+  const y0 = Math.max(0, Math.floor((-padY-oy)/ts)), y1 = Math.min(n-1, Math.floor((H+padY-oy)/ts));
+  const list = [];
+  for(let x=x0;x<=x1;x++) for(let y=y0;y<=y1;y++){ list.push({k:`${z}/${x}/${y}`,z,x,y,l:0}); if(b.o) list.push({k:`o${z}/${x}/${y}`,z,x,y,l:1}); }
+  if(list.length > 400) return;
+  gTiles.selectAll("image").data(list, d=>BASE+d.k).join(
+    en => en.append("image").attr("preserveAspectRatio","none")
+      .attr("href", d=>tileURL(d.l?b.o:b.u, d.z, d.x, d.y))
+      .on("load", ()=>{ tileOk++; })
+      .on("error", ()=>{ tileErr++; checkBlocked(); })
+  ).attr("x",d=>ox+d.x*ts).attr("y",d=>oy+d.y*ts).attr("width",ts+0.6).attr("height",ts+0.6)
+   .sort((a,b)=>a.l-b.l);
+}
+function checkBlocked(){
+  if(baseBlocked || tileOk>0 || tileErr<4) return;
+  baseBlocked = true; setBase("none", true);
+  toast("Fonds de plan indisponibles dans cet aperçu : ils s'affichent sur la version en ligne.");
+}
+function setBase(k, silent){
+  BASE = k; const b = BASES[k];
+  gTiles.selectAll("image").remove();
+  const m = svg.node(); m.classList.toggle("onbase", !!b.u); m.classList.toggle("bdark", b.tone==="dark"); m.classList.toggle("blight", b.tone==="light");
+  document.getElementById("attrib").textContent = b.a;
+  try{ localStorage.setItem("carte-fond", k); }catch(e){}
+  renderBaseMenu(); drawTiles();
+}
+function renderBaseMenu(){
+  const menu = document.getElementById("baseMenu");
+  menu.innerHTML = `<div class="bh">Fond de plan</div>` + Object.entries(BASES).map(([k,b])=>`<button type="button" class="bopt" role="radio" aria-checked="${k===BASE}" data-k="${k}"><span class="th" style="background:${b.th}"></span><span>${b.l}</span></button>`).join("") + (baseBlocked?`<div class="bn">Les fonds de plan externes sont bloqués dans l'aperçu Claude. Ils fonctionnent sur la version publiée sur GitHub Pages.</div>`:"");
+  menu.querySelectorAll(".bopt").forEach(o=>o.onclick=()=>{ if(baseBlocked && BASES[o.dataset.k].u){ toast("Indisponible dans cet aperçu"); return; } setBase(o.dataset.k); });
+}
+const baseBtn = document.getElementById("baseBtn");
+baseBtn.onclick = e=>{ e.stopPropagation(); const m=document.getElementById("baseMenu"); m.hidden=!m.hidden; baseBtn.setAttribute("aria-expanded", !m.hidden); };
+document.addEventListener("click", e=>{ const m=document.getElementById("baseMenu"); if(!m.hidden && !m.contains(e.target) && e.target!==baseBtn){ m.hidden=true; baseBtn.setAttribute("aria-expanded","false"); } });
+window.addEventListener("resize", ()=>drawTiles());
+try{ const s = localStorage.getItem("carte-fond"); if(s && BASES[s]) BASE = s; }catch(e){}
+setBase(BASE, true);
 
 /* ---------- Contrôles ---------- */
 const regSel = document.getElementById("reg");
@@ -841,6 +933,7 @@ function render(){
   regs.classed("sel",f=>f.properties.n===state.reg).classed("dim",f=>state.reg && f.properties.n!==state.reg);
   const byR = d3.rollup(L, v=>d3.sum(v,p=>p.m||0), p=>p.r), mxR = d3.max([...byR.values()])||1;
   const choro = state.mode==="reg";
+  svg.node().classList.toggle("choro", choro);
   regs.style("fill", f=>{ if(!choro) return null; const v=byR.get(f.properties.n)||0; return v ? `color-mix(in srgb, var(--accent) ${Math.round(10+80*Math.sqrt(v/mxR))}%, var(--land))` : null; });
   vals.text(d=> choro ? (byR.get(d.n) ? short(byR.get(d.n)) : "–") : "");
   gMk.style("display", choro ? "none" : null);
