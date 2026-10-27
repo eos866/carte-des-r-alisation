@@ -3,7 +3,8 @@
   "titre": "Carte des réalisations – Sénégal",
   "date_donnees": "2026-10-27",
   "auteur": "CEGIT",
-  "note": "src='real' : projet réel sourcé ; src='fake' : exemple fictif. m=null : montant non communiqué."
+  "note": "src='real' : projet réel sourcé ; src='fake' : exemple fictif. m=null : montant non communiqué.",
+  "note_lineaires": "lin : tracé indicatif [lat, lon] à remplacer par le tracé officiel du maître d'ouvrage ; lin_km : longueur calculée du tracé."
  },
  "secteurs": {
   "sante": "Santé",
@@ -524,8 +525,8 @@
    "r": "Thies",
    "d": "Tivaouane",
    "c": "Mékhé",
-   "x": -16.625,
-   "y": 15.112,
+   "x": -16.5019,
+   "y": 15.0762,
    "m": 8500000000,
    "ml": "inscrits au budget 2026",
    "fin": "LFI 2026",
@@ -548,7 +549,30 @@
    "av": [
     null,
     null
-   ]
+   ],
+   "lin": [
+    [
+     15.115,
+     -16.63
+    ],
+    [
+     15.085,
+     -16.585
+    ],
+    [
+     15.052,
+     -16.532
+    ],
+    [
+     15.11,
+     -16.46
+    ],
+    [
+     15.19,
+     -16.4
+    ]
+   ],
+   "lin_km": 33.7
   },
   {
    "id": 111,
@@ -564,8 +588,8 @@
    "r": "Thies",
    "d": "Mbour",
    "c": "Sandiara",
-   "x": -16.78,
-   "y": 14.43,
+   "x": -16.7926,
+   "y": 14.4912,
    "m": 3500000000,
    "ml": "inscrits au budget 2026",
    "fin": "LFI 2026",
@@ -588,7 +612,26 @@
    "av": [
     null,
     null
-   ]
+   ],
+   "lin": [
+    [
+     14.43,
+     -16.78
+    ],
+    [
+     14.47,
+     -16.79
+    ],
+    [
+     14.51,
+     -16.795
+    ],
+    [
+     14.553,
+     -16.788
+    ]
+   ],
+   "lin_km": 13.9
   },
   {
    "id": 112,
@@ -725,8 +768,8 @@
    "r": "Tambacounda",
    "d": "Tambacounda",
    "c": "Gare de Tambacounda",
-   "x": -13.668,
-   "y": 13.772,
+   "x": -15.6589,
+   "y": 14.15,
    "m": 3000000000,
    "ml": "inscrits en 2026 pour la phase 1",
    "fin": "PLF / LFI 2026",
@@ -749,7 +792,58 @@
    "av": [
     null,
     null
-   ]
+   ],
+   "lin": [
+    [
+     14.672,
+     -17.432
+    ],
+    [
+     14.716,
+     -17.27
+    ],
+    [
+     14.79,
+     -16.93
+    ],
+    [
+     14.69,
+     -16.46
+    ],
+    [
+     14.652,
+     -16.232
+    ],
+    [
+     14.422,
+     -16.02
+    ],
+    [
+     14.27,
+     -15.955
+    ],
+    [
+     14.105,
+     -15.548
+    ],
+    [
+     14.02,
+     -15.12
+    ],
+    [
+     13.983,
+     -14.8
+    ],
+    [
+     13.87,
+     -14.08
+    ],
+    [
+     13.772,
+     -13.668
+    ]
+   ],
+   "lin_km": 438.7
   },
   {
    "id": 116,
@@ -844,8 +938,8 @@
    "r": "Ziguinchor",
    "d": "Ziguinchor",
    "c": "Ziguinchor",
-   "x": -16.262,
-   "y": 12.585,
+   "x": -16.2623,
+   "y": 12.5907,
    "m": null,
    "ml": "montant non communiqué dans la source",
    "fin": "Budget de l'État",
@@ -868,7 +962,18 @@
    "av": [
     null,
     null
-   ]
+   ],
+   "lin": [
+    [
+     12.585,
+     -16.262
+    ],
+    [
+     12.5965,
+     -16.2625
+    ]
+   ],
+   "lin_km": 1.3
   },
   {
    "id": 1,
@@ -924,18 +1029,18 @@
    "r": "Dakar",
    "d": "Dakar",
    "c": "Fann-Point E-Amitié",
-   "x": -17.47,
-   "y": 14.7,
+   "x": -17.4715,
+   "y": 14.6929,
    "m": 1240000000,
    "ml": "coût total TTC",
    "fin": "Budget de la Ville 55 % · Coopération décentralisée 45 %",
    "deb": "2023-10",
    "end": "2024-12",
    "st": "Livré",
-   "desc": "2,4 km de cheminement piéton et cyclable, éclairage LED, mobilier urbain, plantations et agrès de sport en accès libre.",
+   "desc": "4,3 km de cheminement piéton et cyclable, éclairage LED, mobilier urbain, plantations et agrès de sport en accès libre.",
    "ind": [
     [
-     "2,4 km",
+     "4,3 km",
      "de promenade"
     ],
     [
@@ -956,7 +1061,26 @@
    "av": [
     100,
     100
-   ]
+   ],
+   "lin": [
+    [
+     14.676,
+     -17.462
+    ],
+    [
+     14.688,
+     -17.469
+    ],
+    [
+     14.7,
+     -17.475
+    ],
+    [
+     14.711,
+     -17.478
+    ]
+   ],
+   "lin_km": 4.3
   },
   {
    "id": 3,
@@ -1052,8 +1176,8 @@
    "r": "Saint Louis",
    "d": "Saint-Louis",
    "c": "Saint-Louis (Guet Ndar)",
-   "x": -16.508,
-   "y": 16.018,
+   "x": -16.5089,
+   "y": 16.0145,
    "m": 6800000000,
    "ml": "coût total TTC",
    "fin": "BCI 25 % · Fonds climat 75 %",
@@ -1080,7 +1204,26 @@
    "av": [
     100,
     100
-   ]
+   ],
+   "lin": [
+    [
+     15.998,
+     -16.507
+    ],
+    [
+     16.01,
+     -16.5085
+    ],
+    [
+     16.022,
+     -16.5095
+    ],
+    [
+     16.031,
+     -16.51
+    ]
+   ],
+   "lin_km": 3.7
   },
   {
    "id": 6,
@@ -1092,18 +1235,18 @@
    "r": "Saint Louis",
    "d": "Dagana",
    "c": "Richard-Toll",
-   "x": -15.702,
-   "y": 16.462,
+   "x": -15.6041,
+   "y": 16.487,
    "m": 2100000000,
    "ml": "coût total TTC",
    "fin": "Budget départemental 20 % · FDD 80 %",
    "deb": "2024-02",
    "end": "2025-07",
    "st": "Livré",
-   "desc": "28 km de piste bitumée reliant les périmètres rizicoles au réseau national.",
+   "desc": "22 km de piste bitumée reliant les périmètres rizicoles au réseau national.",
    "ind": [
     [
-     "28 km",
+     "22 km",
      "bitumés"
     ],
     [
@@ -1120,7 +1263,26 @@
    "av": [
     100,
     100
-   ]
+   ],
+   "lin": [
+    [
+     16.462,
+     -15.702
+    ],
+    [
+     16.475,
+     -15.64
+    ],
+    [
+     16.495,
+     -15.58
+    ],
+    [
+     16.518,
+     -15.508
+    ]
+   ],
+   "lin_km": 21.6
   },
   {
    "id": 7,
@@ -1332,18 +1494,18 @@
    "r": "Kedougou",
    "d": "Salémata",
    "c": "Salémata",
-   "x": -12.62,
-   "y": 12.63,
+   "x": -12.5007,
+   "y": 12.5689,
    "m": 2900000000,
    "ml": "coût total TTC",
    "fin": "Budget départemental 10 % · FDD 40 % · Partenaire 50 %",
    "deb": "2025-05",
    "end": "2027-03",
    "st": "En cours",
-   "desc": "Aménagement de 46 km de piste en latérite traitée et de 3 radiers pour désenclaver le pays bassari.",
+   "desc": "Aménagement de 71 km de piste en latérite traitée et de 3 radiers pour désenclaver le pays bassari.",
    "ind": [
     [
-     "46 km",
+     "71 km",
      "de piste"
     ],
     [
@@ -1360,7 +1522,30 @@
    "av": [
     55,
     48
-   ]
+   ],
+   "lin": [
+    [
+     12.557,
+     -12.175
+    ],
+    [
+     12.545,
+     -12.31
+    ],
+    [
+     12.56,
+     -12.45
+    ],
+    [
+     12.59,
+     -12.62
+    ],
+    [
+     12.633,
+     -12.822
+    ]
+   ],
+   "lin_km": 71.2
   },
   {
    "id": 14,
